@@ -28,11 +28,11 @@ def gera_e_salva_as_urls_validadas():
             urls_validas.append(url)
             print(f"URL válida encontrada: {url}")
         
-        # Adiciona um atraso de 300 ms entre as requisições
+        # Adiciona um atraso de x ms entre as requisições
         time.sleep(delay)
 
     # Salva os URLs válidos em um arquivo .txt
-    with open("arquivo_txt", "w") as file:
+    with open(arquivo_txt, "w") as file:
         for url in urls_validas:
             file.write(url + "\n")
 
